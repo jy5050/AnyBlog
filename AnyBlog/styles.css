@@ -1,0 +1,66 @@
+:root {
+  --bg: #121212;
+  --fg: #e0e0e0;
+  --accent: #bb86fc;
+  --card-bg: #1f1f1f;
+}
+* { box-sizing: border-box; margin: 0; padding: 0; }
+body {
+  background: var(--bg);
+  color: var(--fg);
+  font-family: 'Inter', sans-serif;
+  line-height: 1.5;
+}
+.container {
+  max-width: 600px;
+  margin: 2rem auto;
+  padding: 0 1rem;
+}
+h1 {
+  text-align: center;
+  margin-bottom: 1.5rem;
+  color: var(--accent);
+  font-weight: 600;
+}
+form {
+  display: flex;
+  flex-direction: column;
+  gap: 0.5rem;
+  margin-bottom: 2rem;
+}
+textarea {
+  resize: vertical;
+  min-height: 80px;
+  padding: 0.75rem;
+  border: none;
+  border-radius: 8px;
+  background: var(--card-bg);
+  color: var(--fg);
+  font-family: 'Inter', sans-serif;
+}
+button {
+  align-self: flex-end;
+  padding: 0.5rem 1rem;
+  border: none;
+  border-radius: 8px;
+  background: var(--accent);
+  color: var(--bg);
+  cursor: pointer;
+  transition: transform 0.1s;
+  font-family: 'Inter', sans-serif;
+}
+button:active {
+  transform: scale(0.98);
+}
+.post {
+  background: var(--card-bg);
+  padding: 1rem;
+  border-radius: 8px;
+  margin-bottom: 1rem;
+}
+.post .time {
+  font-size: 0.8rem;
+  color: #888;
+  margin-bottom: 0.5rem;
+  font-family: 'Inter', sans-serif;
+}
